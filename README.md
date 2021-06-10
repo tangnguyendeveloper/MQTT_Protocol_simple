@@ -1,4 +1,4 @@
-# ĐỒ ÁN CUỐI KỲ NHÓM 3 NT106.L21.MMCL
+# ĐỒ ÁN CUỐI KỲ NHÓM 3 --- LỚP NT106.L21.MMCL
 
 ## DANH SÁCH THÀNH VIÊN
 
