@@ -12,12 +12,12 @@
 
 - Python 3.8.5 hoặc mới hơn
 - Cài đặt các thư viện
-  1. ''' pip install asyncio '''
+  1.  pip install asyncio 
   2. Ubuntu
-    - ''' sudo apt-get install build-essential pypy-dev '''
-    - ''' pip install pycryptodome '''
-    - ''' pypy -m Cryptodome.SelfTest '''
+    -  sudo apt-get install build-essential pypy-dev 
+    -  pip install pycryptodome 
+    -  pypy -m Cryptodome.SelfTest 
   3. Windows
-    - Download Build Tools for Visual Studio 2019. In the installer, select the C++ build tools, the Windows 10 SDK, and the latest version of MSVC v142 x64/x86 build tools.
-    - ''' pip install pycryptodome --no-binary :all: '''
-    - ''' python -m Cryptodome.SelfTest '''
+    -  Download Build Tools for Visual Studio 2019. In the installer, select the C++ build tools, the Windows 10 SDK, and the latest version of MSVC v142 x64/x86 build tools.
+    -  pip install pycryptodome --no-binary :all: 
+    -  python -m Cryptodome.SelfTest 
