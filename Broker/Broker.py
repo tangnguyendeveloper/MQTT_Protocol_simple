@@ -101,9 +101,9 @@ async def ClientConnect(client, reconnect=False):
             name = name.decode("unicode_escape")
             if CheckConnectionExist(name):
                 connection[name] = (client, time.time())
-                await loop.sock_sendall(client, b'200')
+                await loop.sock_sendall(client, b'1')
             else:
-                await loop.sock_sendall(client, b'404')
+                await loop.sock_sendall(client, b'0')
         except:
             print("A reconnection error.")
             client.close()
@@ -123,7 +123,7 @@ async def ClientConnect(client, reconnect=False):
             await loop.sock_sendall(client, data)
             connection[name] = (client, time.time())
         else:
-            await loop.sock_sendall(client, b'404')
+            await loop.sock_sendall(client, b'0')
     except:
         print("A connection error.")
         client.close()
@@ -178,9 +178,9 @@ async def ClentSubcribe(client):
         
         error = database.UpdateSubscribeInformation(name, list_topic)
         if error != 0:
-            await loop.sock_sendall(client, b'404')
+            await loop.sock_sendall(client, b'0')
         else:
-            await loop.sock_sendall(client, b'200')
+            await loop.sock_sendall(client, b'1')
 
     except:
         print("A Clent subcribe error.")
@@ -210,8 +210,11 @@ async def ReceiveFromClient(client, address):
         client.close()
 
     elif package_type == SECURITY_PUBLISH:
-        print(f"\nClient {address[0]}  PUBLISH.")
+        print(f"\nClient {address[0]}  SECURITY_PUBLISH.")
         await loop.create_task(ClentPublish(client, True))
+        client.close()
+    
+    else:
         client.close()
 
 
@@ -250,7 +253,6 @@ async def main():
     
     Binding()
     sock.listen()
-    sock.setblocking(False)
     database.CreateNewORTryConnect()
     encrypt_decrypt.GenerateKey()
 
