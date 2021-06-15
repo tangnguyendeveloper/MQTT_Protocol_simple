@@ -1,0 +1,77 @@
+<RootWidget>
+
+    GridLayout:
+        cols: 1
+        size: root.width, root.height
+
+        GridLayout:
+            cols: 2
+
+            Label:
+                text: "Server: "
+                font_size: 20
+            TextInput:
+                multiline: False
+                font_size: 20
+                id: sever
+                    
+            Label:
+                text: "Port: "
+                font_size: 20
+            TextInput:
+                multiline: False
+                text: '5883'
+                font_size: 20
+                id: port
+
+            Label:
+                text: "Subscribe topic: "
+                font_size: 20
+            TextInput:
+                multiline: True
+                font_size: 20
+                id: subscribe
+                on_text: root.client.subscribe = self.text
+
+            Label:
+                text: "Publish topic: "
+                font_size: 20
+            TextInput:
+                multiline: False
+                font_size: 20
+                id: publish
+                
+            Label:
+                text: "Publish Security"
+                font_size: 20
+            CheckBox:
+                id: security_publish
+
+            Button:
+                id: connect_button
+                text: "Connect"
+                font_size: 30
+                background_color: 0, 1, 0, 1
+                on_press: root.Connect_click()
+            Button:
+                id: connect_publish
+                text: "Publish"
+                font_size: 30
+                background_color: 0, 0, 1, 1
+                on_press: root.Publish_click()
+
+        TextInput:
+            id: data
+            multiline: True
+            font_size: 20
+            text: "any data"
+            height: 100
+
+        ScrollView:
+            size: root.width, root.height/3
+            Label:
+                id: output
+                text: ""
+                font_size: 20
+                text_size: self.size
+

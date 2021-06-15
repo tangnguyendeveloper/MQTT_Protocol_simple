@@ -74,7 +74,7 @@ async def ForwardPackage(list_client, topic, data, security=False):
                 package = SECURITY_PUBLISH+GetBytesFromInt(len(topic), len(data))+topic+data
                 await loop.sock_sendall(connection[client[0]][0], package)
             except:
-                print("Error forward package to ")
+                print("Error forward package  ")
 
         return
 
