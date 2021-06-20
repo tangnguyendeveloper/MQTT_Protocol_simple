@@ -2,11 +2,11 @@
 
 ## DANH SÁCH THÀNH VIÊN
 
-| MSSV          | Họ Và Tên           | Nhiệm vụ     |
-| ------------- | ------------------- | ------------ |
-| 19522181      | NGUYỄN TÂN TẠNG     | Code Broker  |
-| 19521675      | ĐỖ HOÀNG MAI KHANH  | Code Client  |
-| 19522470      | NGUYỄN LÊ ANH TUẤN  | Code UI      |
+| MSSV          | Họ Và Tên           | Nhiệm vụ         |
+| ------------- | ------------------- | ---------------- |
+| 19522181      | NGUYỄN TÂN TẠNG     | Code Broker      |
+| 19521675      | ĐỖ HOÀNG MAI KHANH  | Code MQTTClient  |
+| 19522470      | NGUYỄN LÊ ANH TUẤN  | Code Client      |
 
 ## CÀI ĐẶT MÔI TRƯỜNG
 
