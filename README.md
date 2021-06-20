@@ -17,12 +17,15 @@
     -  sudo apt-get install build-essential pypy-dev 
     -  pip install pycryptodome 
     -  pypy -m Cryptodome.SelfTest 
+    -  [Installation documentation link](https://pycryptodome.readthedocs.io/en/latest/src/installation.html)
   3. Windows
     -  Download Build Tools for Visual Studio 2019. In the installer, select the C++ build tools, the Windows 10 SDK, and the latest version of MSVC v142 x64/x86 build tools.
     -  pip install pycryptodome --no-binary :all: 
-    -  python -m Cryptodome.SelfTest 
+    -  python -m Cryptodome.SelfTest (Có thể bỏ qua)
+    -  [Installation documentation link](https://pycryptodome.readthedocs.io/en/latest/src/installation.html)
   4. Cài đặt Kivy và môi trường ảo
-    [Installing Kivy] https://kivy.org/doc/stable/gettingstarted/installation.html
+    [Installing Kivy](https://kivy.org/doc/stable/gettingstarted/installation.html)
+    [Youtube - Installing Kivy on Windows](https://www.youtube.com/watch?v=dLgquj0c5_U)
 
 
 
