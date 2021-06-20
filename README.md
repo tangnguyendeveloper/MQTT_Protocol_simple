@@ -21,6 +21,9 @@
     -  Download Build Tools for Visual Studio 2019. In the installer, select the C++ build tools, the Windows 10 SDK, and the latest version of MSVC v142 x64/x86 build tools.
     -  pip install pycryptodome --no-binary :all: 
     -  python -m Cryptodome.SelfTest 
+  4. Cài đặt Kivy và môi trường ảo
+    
+    [Installing Kivy] https://kivy.org/doc/stable/gettingstarted/installation.html
 
 
 
