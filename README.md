@@ -24,8 +24,8 @@
     -  python -m Cryptodome.SelfTest (Có thể bỏ qua)
     -  [Installation documentation link](https://pycryptodome.readthedocs.io/en/latest/src/installation.html)
   4. Cài đặt Kivy và môi trường ảo
-    [Installing Kivy](https://kivy.org/doc/stable/gettingstarted/installation.html)
-    [Youtube - Installing Kivy on Windows](https://www.youtube.com/watch?v=dLgquj0c5_U)
+    -  [Installing Kivy](https://kivy.org/doc/stable/gettingstarted/installation.html)
+    -  [Youtube - Installing Kivy on Windows](https://www.youtube.com/watch?v=dLgquj0c5_U)
 
 
 
