@@ -22,7 +22,6 @@
     -  pip install pycryptodome --no-binary :all: 
     -  python -m Cryptodome.SelfTest 
   4. Cài đặt Kivy và môi trường ảo
-    
     [Installing Kivy] https://kivy.org/doc/stable/gettingstarted/installation.html
 
 
